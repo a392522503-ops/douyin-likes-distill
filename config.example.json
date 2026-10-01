@@ -1,0 +1,17 @@
+{
+  "focus_tags": ["AI智能体", "AI工作流", "自媒体运营", "GEO", "SEO", "OPC", "一人公司", "社交", "潮流文化", "端侧AI", "汽车改装", "食物保存"],
+  "whitelist_signals": ["教程", "原理", "方法论", "工具", "实战", "避坑", "测评", "开源", "案例", "拆解", "科普", "指南"],
+  "chrome": {
+    "cdp_port": 9222,
+    "profile_dir": "C:/Users/Administrator/YuedaContent/tools/_chrome_cdp"
+  },
+  "ima": {
+    "knowledge_base_id": "YOUR_IMA_KB_ID",
+    "note": "在支持 ima-mcp 的宿主中用 get_addable_knowledge_base_list 查询；或从 ima 客户端获取"
+  },
+  "asr": {
+    "model": "large-v3-turbo",
+    "hf_endpoint": "https://hf-mirror.com",
+    "tip": "国内网络设 HF_ENDPOINT 镜像；模型约 1.6GB 仅首次下载"
+  }
+}
