@@ -1,11 +1,11 @@
 ---
 name: douyin-likes-distill
-description: Turn your Douyin/TikTok "liked" videos into a structured, searchable knowledge base. Harvests your likes list via CDP, transcribes audio with faster-whisper, rates and filters content by customizable focus tags (SEO/GEO/OPC/AI agents/lifestyle niches...), writes to a local JSONL knowledge index, and syncs curated batches to Tencent ima cloud knowledge base. 全程本地优先，零 API 费。
+description: Turn your Douyin/TikTok **likes, favorites, and re-watched videos** into a structured, searchable knowledge base. Works for any platform with a collection list (Douyin, Bilibili, Xiaohongshu, YouTube — same pipeline, different harvest URL). Harvests your likes list via CDP, transcribes audio with faster-whisper, rates and filters content by customizable focus tags (SEO/GEO/OPC/AI agents/lifestyle niches...), writes to a local JSONL knowledge index, and syncs curated batches to Tencent ima cloud knowledge base. 全程本地优先，零 API 费。
 ---
 
 # douyin-likes-distill — 抖音点赞 → 知识库管线
 
-把你在抖音刷到并点赞的视频，变成结构化、可检索、全 agent 共用的知识资产。
+把你在抖音刷到并「点赞 / 收藏 / 反复观看」的视频，变成结构化、可检索、全 agent 共用的知识资产。小红书、B站、YouTube 的收藏列表同样适用——换一个列表 URL 即可。
 
 ## 核心理念（QBS）
 

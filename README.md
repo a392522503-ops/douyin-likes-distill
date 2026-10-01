@@ -1,6 +1,6 @@
 # douyin-likes-distill 🔁
 
-> **把抖音「点赞」变成知识资产。** 你照常刷视频、照常点赞；这条管线把你的喜欢列表自动抓取 → 原声转写 → 按焦点标签评级筛选 → 写入本地知识库 + 腾讯 ima 云知识库——全程零人工、零 API 费。
+> **把抖音「点赞」变成知识资产。** 你照常刷视频、照常点赞/收藏/反复观看；这条管线把你的收藏列表自动抓取（抖音 / B站 / 小红书 / YouTube 通用） → 原声转写 → 按焦点标签评级筛选 → 写入本地知识库 + 腾讯 ima 云知识库——全程零人工、零 API 费。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)]()
