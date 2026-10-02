@@ -68,3 +68,22 @@ python scripts/kb_index.py --batch batch.json --index INDEX.jsonl
 ## License
 
 MIT
+
+
+## Demo
+
+一句话实录：`你刷到的干货视频，点完赞去哪了？沉底了。现在，点赞会自己变成知识库。`
+
+首周实测：27 条喜欢视频 → A 级 12 条 / B 级 7 条 → 知识库与 ima 双入库，人工介入 **0 分钟**。
+
+> 宣传片与 Skill 同仓发布：`skills/douyin-likes-distill` 即本仓库。
+
+
+## Methodology Notes (from production use)
+
+Three hard-won rules baked into this pipeline:
+
+1. **Word-level timestamps, never estimates.** Subtitle sync failures almost always come from estimating timing by character count. We run faster-whisper with `word_timestamps=True` and treat that JSON as the single source of truth for subtitle timing.
+2. **VO-driven editing.** Shot boundaries = sentence boundaries in the voiceover. Cut on speech, not on a fixed grid — retention-friendly and it eliminates dead air.
+3. **Sample-first for agentic rendering.** Before rendering a full video, render three 3-second sample shots and get sign-off. A rejected 35s render costs 2 hours; a rejected sample costs 15 minutes.
+4. **Verify TTS output by ASR round-trip.** Synthesized speech is scored by feeding it back through speech recognition; below 95% character accuracy the sentence is auto-rewritten and re-synthesized.
